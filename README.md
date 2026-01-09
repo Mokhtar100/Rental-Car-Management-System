@@ -55,4 +55,11 @@ rental-car-management-system/
 ├── server.js           # Application entry point
 ├── package.json
 └── README.md
+```
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/rental-car-management-system.git
+cd rental-car-management-system
 
