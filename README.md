@@ -62,4 +62,54 @@ rental-car-management-system/
 ```bash
 git clone https://github.com/your-username/rental-car-management-system.git
 cd rental-car-management-system
+```
+### 2️⃣ Install Dependencies
+```bash
+npm install
+```
+### 3️⃣ Configure Environment Variables
+Create a .env file in the root directory and add the following:
+```bash
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+```
+### 4️⃣ Run the Application
+```bash
+npm start
+```
+The server will start on the port defined in your .env file.
 
+---
+
+## ⚙️ Installation & Setup
+### 🔐 Authentication
+```http
+POST /api/auth/register   # Register a new user
+POST /api/auth/login      # Authenticate user and return JWT
+```
+### 🚘 Cars
+```http
+GET    /api/cars           # Get all available cars
+POST   /api/cars           # Add a new car (Admin only)
+PUT    /api/cars/:id       # Update car details (Admin only)
+DELETE /api/cars/:id       # Delete a car (Admin only)
+```
+### 📅 Bookings
+```http
+POST /api/bookings        # Create a new booking
+GET  /api/bookings/user   # View logged-in user’s bookings
+GET  /api/bookings        # View all bookings (Admin only)
+```
+### 🧪 Testing
+```text
+API endpoints can be tested using:
+- Postman
+- Thunder Client
+- Insomnia
+```
+### 📄 License
+```text
+This project is licensed under the MIT License.
+You are free to use, modify, and distribute this project.
+```
